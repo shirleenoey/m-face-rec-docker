@@ -7,7 +7,7 @@ import {
 } from 'reactstrap';
 import PropTypes from 'prop-types';
 
-function ProfileIcon({ direction }) {
+function ProfileIcon({ direction, onRouteChange }) {
 	const [dropdownOpen, setDropdownOpen] = useState(false);
 
 	const toggle = () => setDropdownOpen((prevState) => !prevState);
@@ -21,10 +21,11 @@ function ProfileIcon({ direction }) {
 					<img src="http://tachyons.io/img/logo.jpg" className="br-100 ba h3 w3 dib" alt="avatar" />					
 				</DropdownToggle>
 				<DropdownMenu 
-					className='b--transparent shadow-5' 
+					right
+					className="b--transparent shadow-5" 
 					style= {{marginTop: '20px', backgroundColor: 'rgba(255,255,255,0.5)'}}>
 					<DropdownItem>View profile</DropdownItem>
-					<DropdownItem>Signout</DropdownItem>
+					<DropdownItem onClick = {() => onRouteChange('signout')}>Signout</DropdownItem>
 				</DropdownMenu>
 			</Dropdown>
 		</div>
