@@ -13,7 +13,7 @@ const Logo = () => {
 								tiltMaxAngleY: '80deg'}}
 				className='Tilt br2 shadow-2'>
 					<div>
-						<img style= {{width: '6rem', height: '6rem'}} className='pa2' alt='logo' src={brain} />
+						<img style= {{width: '6rem', height: '6rem'}} className='pa1 mt2' alt='logo' src={brain} />
 					</div>
 			</Tilt>
 		</div>
