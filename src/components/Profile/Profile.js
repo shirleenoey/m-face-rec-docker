@@ -18,7 +18,6 @@ const Profile = ({isProfileOpen, toggleModal}) => {
 						type="text" 
 						name="user-name"  
 						id="name" 
-						// onChange={this.onNameChange}
 					/>
 					<label className="mt2 fw6" htmlFor="user-age">Age:</label>
 					<input 
@@ -27,7 +26,6 @@ const Profile = ({isProfileOpen, toggleModal}) => {
 						type="text" 
 						name="user-age"  
 						id="age" 
-						// onChange={this.onNameChange}
 					/>
 					<label className="mt2 fw6" htmlFor="user-pet">Pet:</label>
 					<input 
@@ -36,7 +34,6 @@ const Profile = ({isProfileOpen, toggleModal}) => {
 						type="text" 
 						name="user-pet"  
 						id="pet" 
-						// onChange={this.onNameChange}
 					/>
 					<div className='mt4' style={{ display: 'flex', justifyContent: 'space-evenly'}}>
 						<button className='b pa2 grow pointer hover-white w-40 bg-light-green b--black-20'>Save</button>
