@@ -24,7 +24,9 @@ const initialState = {
     name: '',
     email: '',
     entries: 0,
-    joined: ''
+    joined: '',
+    pet: '',
+    age: ''
   }
 }
 
@@ -115,14 +117,17 @@ class App extends Component {
   }
 
   render() {
-    const { isSignedIn, imageUrl, route, boxes, isProfileOpen } = this.state;
+    const { isSignedIn, imageUrl, route, boxes, isProfileOpen, user } = this.state;
     return (
       <div className="App">
         <ParticlesBg className='particlesBg' type="circle" bg={{position: "fixed", zIndex: -1, top: 0, left: 0, bottom: 0, right: 0}} />
         <Navigation isSignedIn={isSignedIn} onRouteChange={this.onRouteChange} toggleModal={this.toggleModal} />
         {isProfileOpen &&
           <Modal>
-            <Profile isProfileOpen={isProfileOpen} toggleModal={this.toggleModal} />
+            <Profile 
+              user={user}
+              isProfileOpen={isProfileOpen} 
+              toggleModal={this.toggleModal} />
           </Modal>
         }
         { route === 'home' 
