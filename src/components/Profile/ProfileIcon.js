@@ -29,7 +29,7 @@ class ProfileIcon extends React.Component {
 						<img src="http://placekitten.com/g/600/300" className="br-100 ba h3 w3 dib" alt="avatar" />					
 					</DropdownToggle>
 					<DropdownMenu 
-						right
+						end
 						className="b--transparent shadow-5" 
 						style= {{marginTop: '20px', backgroundColor: 'rgba(255,255,255,0.5)'}}>
 						<DropdownItem onClick={this.props.toggleModal}>View profile</DropdownItem>
