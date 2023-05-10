@@ -1,1 +1,1 @@
-# m-face-rec-docker
+# m-face-rec-docker. this version is dockerized.
